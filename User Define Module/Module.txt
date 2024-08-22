@@ -1,0 +1,56 @@
+import math
+
+
+def add(n1, n2):
+    return n1 + n2
+
+
+def sub(n1, n2):
+    return n1 - n2
+
+
+def multiply(n1, n2):
+    return n1 * n2
+
+
+def division(n1, n2):
+    return n1 / n2
+
+
+def odd(n):
+    return n % 2 != 0
+
+
+def even(n):
+    return n % 2 == 0
+
+
+def prime(n):
+    # A prime is a natural number which is more than 1, the no is divisible by 1 and itself is called prime no
+    c = 0
+    for i in range(1, n + 1):
+        if n%2==0:
+            c+=1
+    if c==2:
+        return True
+    else:
+        return False
+
+
+def factorial(n):
+    fact = math.factorial(n)
+    return fact
+
+
+def cube(n):
+    return n ** 3
+
+
+def square(n):
+    return n * n
+
+
+def cubeRoot(n):
+    return n ** (1 / 3)
+
+
